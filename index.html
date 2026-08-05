@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8" name="robots" content="noindex, nofollow">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>門真探偵事務所 業務端末</title>
+<meta charset="UTF-8">
+<title>東都探偵事務所 業務端末</title>
 
 <style>
 *{
@@ -64,7 +63,7 @@ button:hover{
 /* ログ画面 */
 
 #logs{
-    width:100%;
+    display:none;
     max-width:1100px;
     margin:auto;
     padding:50px;
@@ -110,41 +109,6 @@ tr:hover{
     width:120px;
     color:#666;
 }
-
-
-/* スマホ表示 */
-
-@media screen and (max-width:600px){
-
-    .login-box{
-        width:85%;
-        max-width:360px;
-    }
-
-    #logs{
-        padding:50px;
-    }
-
-    .header{
-        font-size:22px;
-    }
-
-    #viewer{
-        font-size:15px;
-        line-height:1.8;
-    }
-
-    #logcontent h2{
-        font-size:20px;
-    }
-
-    input,
-    button{
-        font-size:16px;
-        padding:14px;
-    }
-
-}
 </style>
 </head>
 
@@ -154,7 +118,7 @@ tr:hover{
 
 <div class="login-box">
 
-<h2>門真探偵事務所 内部業務端末</h2>
+<h2>東都探偵事務所 内部業務端末</h2>
 
 <input
 type="text"
@@ -197,7 +161,7 @@ readonly>
     <td>D-2485</td>
     <td>病院閉鎖・行方不明者捜索依頼（受付記録）</td>
 </tr>
-
+    
 <tr>
 <td>2026/08/03 18:24</td>
 <td>D-2481</td>
@@ -275,7 +239,7 @@ readonly>
 <div id="logcontent"></div>
 
 </div>
-
+    
 </div>
 
 <script>
@@ -524,6 +488,8 @@ document.getElementById("logcontent").innerHTML=`
 `;
 
     }
+
+}
 
 }
 
